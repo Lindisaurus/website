@@ -13,9 +13,14 @@ html {
 
 body {
   font-family: "asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1rem;
-  background: #11bac6;
+  font-size: 1rem;
+  @media screen and (min-width: 45rem) {
+    font-size: 1.1rem;
+  }
+  background: #212a3b;
   color: #fafff6;
+  padding-bottom: 2rem;
+  overflow-x: hidden;
 }
 
 p {
@@ -29,17 +34,17 @@ small {
 header {
   text-align: center;
   background: #e9ce3a;
-  border-bottom: 3px #e2c41b solid;
+  border-bottom: 3px #ad971a solid;
   padding-top: 1rem;
 }
 
 header a {
   text-decoration: none;
-  color: #787235;
+  color: #212a3b;
 }
 
 header a:visited {
-  color: #787235;
+  color: #212a3b;
 }
 
 .wrapper {
@@ -50,11 +55,30 @@ header a:visited {
 }
 
 .pullout {
+  p, h3 {
+    padding: 0.5rem;
+    @media screen and (min-width: 50rem) {
+      padding: 0;
+    }
+  }
   display: flex;
-  border-radius: 10px;
-  padding: 2rem;
   flex-flow: column;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background: #fff;
+  color: #333;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  @media screen and (min-width: 50rem) {
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+}
+
+.lg-padding-left--2rem {
+  @media screen and (min-width: 50rem) {
+    padding-left: 2rem;
+  }
 }
 
 .flex-grid--columns {
@@ -65,32 +89,27 @@ header a:visited {
 .half {
   width: 100%;
   padding-bottom: 0.5rem;
+  @media screen and (min-width: 50rem) {
+    width: 50%;
+  }
 }
 
 .half:first-child {
-  padding-right: 0.25rem;
-  padding-bottom: 0.5rem;
+  @media screen and (min-width: 50rem) {
+    padding-right: 1rem;
+  }
+  padding-bottom: 1rem;
 }
 
 .half:last-child {
-  padding-left: 0.25rem;
+  @media screen and (min-width: 50rem) {
+    padding-right: 1rem;
+  }
 }
 
 .quarter {
   width: 25%;
   padding: 0.5rem;
-}
-
-.background--red {
-  background: #ab273d;
-}
-
-.background--blue {
-  background: #2778ab;
-}
-
-.background--yellow {
-  background: #e9ce3a;
 }
 
 h1, h2, h3, h4 {
@@ -116,18 +135,17 @@ h1, h2, h3, h4 {
   padding-right: 0;
 }
 
-.width--90 {
-  width: 90%;
+.lg-width--65pc {
+  @media screen and (min-width: 50rem) {
+    width: 65%;
+  }
 }
 
-@media(min-width: 800px) {
+@media(min-width: 50rem) {
   .wrapper {
     padding: 0;
   }
   .flex-grid--columns {
     flex-flow: row wrap;
-  }
-  .half {
-    width: 50%;
   }
 }
