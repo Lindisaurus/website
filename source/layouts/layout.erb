@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Lindsay McDougall" %></title>
 
     <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
 
@@ -14,14 +13,20 @@
     <%= javascript_include_tag :all %>
   </head>
   <header role="header">
-    <h1>Lindsay McDougall</h1>
-    <p>I design and I bake</p>
+    <a href="/"><h1>Lindsay McDougall</h1></a>
+    <nav role="navigation">
+      <ul class="horizontal-list horizontal-list--center">
+        <li><a href="http://github.com/lindisaurus"><img src="images/social/github-mark.png" width="32"/></a></li>
+        <li><a href="http://instagram.com/spiffingspandex"><img src="images/social/instagram.png" width="32"/></a></li>
+        <li><a href="http://twitter.com/lindisaurus"><img src="images/social/twitter.png" width="32"/></a></li>
+      </ul>
+    </nav>
   </header>
   <body class="<%= page_classes %>">
     <main role="main">
       <div class="wrapper">
       <%= yield %>
+      </div>
     </main>
-    </div>
   </body>
 </html>
