@@ -112,6 +112,10 @@ header a:visited {
   padding: 0.5rem;
 }
 
+figure {
+  margin: 0 !important;
+}
+
 h1, h2, h3, h4 {
   margin-top: 0;
 }
@@ -133,12 +137,6 @@ h1, h2, h3, h4 {
 
 .horizontal-list li:last-child {
   padding-right: 0;
-}
-
-.lg-width--65pc {
-  @media screen and (min-width: 50rem) {
-    width: 65%;
-  }
 }
 
 @media(min-width: 50rem) {
