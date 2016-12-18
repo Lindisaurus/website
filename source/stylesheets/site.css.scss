@@ -64,7 +64,16 @@ header a:visited {
 
 .half {
   width: 100%;
-  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.half:first-child {
+  padding-right: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.half:last-child {
+  padding-left: 0.25rem;
 }
 
 .quarter {
@@ -109,10 +118,6 @@ h1, h2, h3, h4 {
 
 .width--90 {
   width: 90%;
-}
-
-.align--center {
-  text-align: center;
 }
 
 @media(min-width: 800px) {
