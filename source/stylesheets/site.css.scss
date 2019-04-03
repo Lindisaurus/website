@@ -12,15 +12,26 @@ html {
 }
 
 body {
-  font-family: "asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   @media screen and (min-width: 45rem) {
     font-size: 1.1rem;
   }
-  background: #212a3b;
-  color: #fafff6;
+  background: #E3C6C2;
+  color: #2E0C0D;
   padding-bottom: 2rem;
   overflow-x: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  min-height: 100vh;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 p {
@@ -84,6 +95,14 @@ header a:visited {
 .flex-grid--columns {
   display: flex;
   flex-flow: column;
+}
+
+.align-items--center {
+  align-items: center;
+}
+
+.background--light-pink {
+  background: #E3D5D2;
 }
 
 .half {
