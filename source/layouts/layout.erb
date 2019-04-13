@@ -12,10 +12,18 @@
 
     <%= stylesheet_link_tag :site %>
   </head>
-      <body class="<%= page_classes %>">
+  <body class="<%= page_classes %>">
+    <nav>
+      <div class="wrapper">
+        <ul class="unstyled-list navigation-list">
+          <li>Home</li>
+          <li>Work</li>
+        </ul>
+      </div>
+    </nav>
     <main role="main">
       <div class="wrapper">
-      <%= yield %>
+        <%= yield %>
       </div>
     </main>
   </body>

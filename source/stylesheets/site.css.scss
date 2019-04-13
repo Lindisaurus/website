@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import "normalize";
 
+$light-pink: #ffedf4;
+$mid-pink: #d6b5b0;
+
 *,
 *::before,
 *::after {
@@ -63,6 +66,10 @@ header a:visited {
   margin: 0 auto;
   margin-top: 1rem;
   padding: 1rem;
+}
+
+.margin-bottom--large {
+  margin-bottom: 2rem;
 }
 
 .pullout {
@@ -165,4 +172,35 @@ h1, h2, h3, h4 {
   .flex-grid--columns {
     flex-flow: row wrap;
   }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  li {
+    border-bottom: 4px solid $light-pink;
+    padding-bottom: 0.6rem;
+  }
+}
+
+.unstyled-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+  }
+  li:not(first-child)
+  {
+    margin-right: 2rem;
+  }
+}
+
+.button {
+  background: $light-pink;
+  padding: 0.5rem 1rem;
+  border-bottom: 4px $mid-pink solid;
 }
