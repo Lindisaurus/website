@@ -32,7 +32,7 @@ body {
   min-height: 90vh;
 }
 
-.img-responsive {
+.ponsive {
   max-width: 100%;
   height: auto;
   display: block;
@@ -80,13 +80,17 @@ header a:visited {
   padding-top: 2rem;
 }
 
-.padding-y--4 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.padding-y--6 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   @media screen and (min-width: 50rem) {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
+}
+
+.background--pink {
+  background: $background-pink !important;
 }
 
 .pullout {
@@ -106,7 +110,6 @@ header a:visited {
   border-bottom-right-radius: 5px;
   @media screen and (min-width: 50rem) {
     padding: 1.5rem;
-    border-radius: 10px;
   }
 }
 
