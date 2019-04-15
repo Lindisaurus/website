@@ -124,6 +124,13 @@ header a:visited {
   }
 }
 
+.flip-mobile {
+  flex-flow: column-reverse wrap !important;
+  @media screen and (min-width: 50rem) {
+    flex-flow: row wrap !important;
+  }
+}
+
 .flex-grid--columns {
   display: flex;
   flex-flow: column;
