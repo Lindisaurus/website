@@ -173,9 +173,11 @@ header a:visited {
 
 .half:last-child {
   @media screen and (min-width: 50rem) {
-    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
+
+
 
 .quarter {
   width: 25%;
